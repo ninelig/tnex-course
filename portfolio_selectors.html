@@ -1,0 +1,184 @@
+<!doctype html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-decoration: underline;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: darkgreen;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        .project1 {
+            background-color: aqua;
+        }
+
+        .project2 {
+            background-color: aquamarine;
+        }
+
+        .project3 {
+            background-color: azure;
+        }
+
+        .project1,
+        .project2,
+        .project3 {
+            padding: 20px 12px 22px 15px;
+            margin: 10px;
+            border: 1px solid grey;
+        }
+
+        #about {
+            text-align: center;
+            background-color: lightgray;
+        }
+
+        #skills {
+            background-color: lightyellow;
+
+        }
+
+        #skills ul li {
+            font-weight: bold;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            color: darkred;
+            display: inline-block;
+
+        }
+
+        nav ul li:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: orange;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section#projects>h3 {
+            color: cornflowerblue;
+            text-align: left;
+
+        }
+
+        img[src] {
+            border: 2px solid black;
+            border-radius: 50%;
+            max-height: 150px;
+        }
+
+        #skills li::before {
+            content: "⭐ ";
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio.</h1>
+        <nav>
+            <ul>
+                <li> <a href="#about"> About </li>
+                <li> <a href="#projects"> Projects</li>
+                <li> <a href="#skills"> Skills</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+
+        <h2>About Me</h2>
+        <p> I'm 36 years old, master of law, working in the public sphere.  </p>
+        <img src="images/me.jpg" withd="500px" height="500px" alt="this is my picture">
+
+    </section>
+    <section id="projects">
+
+
+        <h2>My Projects</h2>
+
+        <div class="project1">
+            <h3> this is my project of pulic law </h3>
+            <p> the law of relationships between individuals and the government:
+                "a body governed by public law" </p>
+
+        </div>
+       
+        <div class="project2">
+            <h3> this is my project of pulic law </h3>
+            <p> the law of relationships between individuals and the government:
+                "a body governed by public law" </p>
+
+        </div>
+        <div class="project3">
+            <h3> this is my project of pulic law </h3>
+            <p> the law of relationships between individuals and the government:
+                "a body governed by public law" </p>
+
+        </div>
+    </section>
+    <section class="testimonials">
+        <h3>Testimonials</h3>
+        <p>
+            <blockquote>It's great!</blockquote>
+        </p>
+        <p>
+            <blockquote>It's super!</blockquote>
+        </p>
+    </div>
+    <section id="skills">
+
+        <h2>My Skills</h2>
+        <ul>
+            <li> HTML </li>
+            <li> CSS </li>
+            <li> JavaScript</li>
+            <li> problem solving </li>
+            <li> Communication</li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <p> © 2024 My Portfolio </p>
+    </footer>
+</body>
