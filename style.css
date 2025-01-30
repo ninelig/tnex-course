@@ -3,24 +3,31 @@
 *{
     margin:0;
     padding:0;
+   
 }
 
+body{
+    max-width: 100%;
+}
 
 section.timeline-wrapper{
     width:100%;
     height:100vh;
     display:flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 h2.virus-name{
     color: #659F7C;
-    font-size: 45px;
+    font-size: 20px;
     position: absolute;
     top:-320px;
     left:-29px;
 }
 .timeline{
     position: relative;
+    top:70px;
     width:100vw;
     height:5px;
     background-color: #d74e12;
@@ -35,13 +42,10 @@ h2.virus-name{
     z-index: 1;
 }
 
-#screening{
-    transform:rotate(180deg);
-}
-
 .card-wrapper{
     position: relative;
     display: flex;
+    font-size: 15px;
 }
 
 .virus-icon-borders{
@@ -53,6 +57,7 @@ h2.virus-name{
     border-left: 1px solid #659F7C;  
     border-bottom: 1px solid #659F7C;;
 }
+
 .ver-border {
     width: 0;
     height: 270px;
@@ -86,7 +91,6 @@ h2.virus-name{
   
 }
 
-
 .side-content-holder p{
 width:194px;
 color:#616161;
@@ -105,9 +109,12 @@ margin-bottom: 1rem;
     font-size: 16px;
     text-decoration: none;
 }
- .timeline-item{  
+
+ .timeline-item {  
     z-index:2;
+   
  } 
+
 
 
 .side-content-holder .year-number{
@@ -117,6 +124,10 @@ margin-bottom: 1rem;
 .card-wrapper:nth-child(even), .card-wrapper:nth-child(even) .top-content-wrapper, .card-wrapper:nth-child(even) h2 {
 transform:rotate(180deg) scale(-1,1);
 }
+
+.card-wrapper:nth-child(even) .timeline-item {
+    transform:rotate(180deg);
+ }
 
 
 .card-wrapper:nth-child(even) .virus-icon-borders {
@@ -135,4 +146,52 @@ transform:rotate(180deg) scale(-1,1);
 .card-wrapper:nth-child(even) h2{
     color:#d74e12;
    
+}
+
+.timeline-header{
+    position: absolute;
+    top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+
+.timeline-header h1{
+font-size: 30px;
+top:5px;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav{
+    min-width: 500px;
+    max-width:530px ;
+    margin-top: 5px;
+}
+
+li{
+    font-size: 20px;
+    cursor: pointer;
+    color:#659F7C;
+    border-bottom: 3px solid #659F7C;
+    padding: 0px 15px;
+}
+
+li:hover{
+    color:#d74e12;
+    border-bottom: 3px solid #d74e12;
+
+}
+
+.timeline-marks{
+ position: fixed;
+ flex-direction: column;
+ left:30px;
+ bottom: 30px;
 }
