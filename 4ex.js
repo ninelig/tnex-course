@@ -1,8 +1,6 @@
-function repeatString(str, n) {
-    do {
-        console.log(str);
-        n--;
-    } while(n > 0)
+function trainJedi(name, strength = 50) {
+    return `${name} has ${strength} Power`;
 }
 
-repeatString ('Hello', 0);
+console.log(trainJedi("Luke", 100));  
+console.log(trainJedi("Rey"));        

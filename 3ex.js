@@ -1,14 +1,6 @@
-function sumNumbersUpTo(n) {
-    let sum = 0;
-    let i = 1;
-  
-    while (i <= n) {
-      sum += i;
-      i++;
-    }
-  
-    return sum;
-  }
-  
-  
-  console.log(sumNumbersUpTo(5));
+function calculateBounty(currentBounty, increase) {
+    return currentBounty + increase;
+}
+
+let newBounty = calculateBounty(1_500_000_000, 500_000_000);
+console.log(newBounty);

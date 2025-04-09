@@ -1,7 +1,5 @@
-function printObjectKeys(obj){
-for (let prop in obj){
-    console.log(prop)
-}
+function gollumSays(phrase) {
+    return `${phrase}... ${phrase}... ${phrase}...`;
 }
 
-printObjectKeys({name:"alice", age:25});
+console.log(gollumSays("My precious"));  

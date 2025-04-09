@@ -1,8 +1,6 @@
-const arr = ["Apple", "Banana", "Cherry"];
+function castSpell(spell, wizard) {
+    return `${wizard} casts ${spell}!`;
+}
 
-function printArrayElements(){
-for (let item of arr){
-console.log(item);
-}
-}
-printArrayElements();
+let result = castSpell("Expelliarmus", "Hermione");
+console.log(result);
